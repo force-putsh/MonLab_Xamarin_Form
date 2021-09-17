@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Ma Liste"
+             x:Class="Le_Lab.Views.Liste">
+    <ContentPage.Content>
+        <ListView
+            x:Name="MaSource">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout
+                            Orientation="Horizontal"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center"
+                            Margin="15,0">
+                            <Label x:Name="lbNom" Text="{Binding Nom}" TextColor="Black"/>
+                            <Label x:Name="lbPrix" Text="{Binding Prix}" TextColor="Black" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

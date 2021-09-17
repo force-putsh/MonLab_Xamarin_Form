@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Menu"
+             x:Class="Le_Lab.Views.PageDeMenu">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" 
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Spacing="0">
+            <StackLayout Orientation="Vertical"
+                         BackgroundColor="#518faa"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="Start">
+                <Image 
+                    Source="lab_logo.png"
+                    HeightRequest="150"
+                    Margin="0,25,0,0"/>
+                <Label
+                    x:Name="Titre"
+                    Text="Mon Labo"
+                    FontAttributes="Bold"
+                    Margin="0,10,0,0"
+                    FontSize="80"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <Image
+                Source="lab_separator.png"
+                Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="Center">
+                <Button 
+                    Text="Compter"
+                    Margin="50,30,50,0"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Large"
+                    Style="{StaticResource styleBtnGo}"
+                    Clicked="btnCompter_Clicked"/>
+                <Button 
+                    Text="Tabs"
+                    x:Name="btnTabs"
+                    Margin="50,0"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Large"
+                    BackgroundColor="Chocolate"
+                    Style="{StaticResource styleBtnGo}"
+                    Clicked="btnTabs_Clicked"/>
+                <Button 
+                    x:Name="btnListe"
+                    Text="Liste"
+                    Margin="50,0"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Large"
+                    BackgroundColor="Chartreuse"
+                    Style="{StaticResource styleBtnGo}"
+                    Clicked="btnListe_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

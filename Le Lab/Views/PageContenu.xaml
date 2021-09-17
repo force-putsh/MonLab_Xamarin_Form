@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:Le_Lab.Views"
+            Title="Mes Appareilles"
+            BarBackgroundColor="#508CA7"
+             x:Class="Le_Lab.Views.PageContenu">
+    <views:Voiture IconImageSource="lab_icon_voiture.png"/>
+    <views:Avion IconImageSource="lab_icon_avion.png"/>
+    <views:CountPage IconImageSource="lab_icon_compteur"/>
+
+</TabbedPage>
